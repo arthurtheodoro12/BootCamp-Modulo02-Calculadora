@@ -27,6 +27,7 @@ body {
 
 .calc input {
     height: 22px;
+    width: 280px;
     padding: 8px;
     font-size: 1.2rem;
     margin: 15px 70px;
@@ -37,6 +38,11 @@ body {
     outline: none;
     box-shadow: 0 0 10px #3b59ee;
     border: 1px solid #74d0ff;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 5px;
 }
 
 .calc button {
