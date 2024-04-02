@@ -10,19 +10,24 @@
    
     <div class="container">
         <div class="calc">
+            <img src="./assets/calculate_black_48dp.svg" alt="imagem das 4 operações matemáticas">
             <h1>Calculadora</h1>
             <input type="number" id="num1" placeholder="Digite um número">
             <input type="number" id="num2" placeholder="Digite um número">
             <div class="buttons">  
-                <button id="soma" onclick="calcular('soma')">+</button>
-                <button id="sub" onclick="calcular('sub')">-</button>
-                <button id="multi" onclick="calcular('multi')">*</button>
-                <button id="div" onclick="calcular('div')">/</button>
+                <button id="soma" onclick="calcular('+')">+</button>
+                <button id="sub" onclick="calcular('-')">-</button>
+                <button id="multi" onclick="calcular('*')">*</button>
+                <button id="div" onclick="calcular('/')">/</button>
             </div>
             <input readonly id="resultado">
         </div>
         <div class="historico">
-
+            <h1>Histórico:</h1>
+            <div class="last-operations">
+                <p>10 últimas operações:</p>
+                <div id="historico"></div>
+            </div>
         </div>
     </div>
 

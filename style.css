@@ -1,13 +1,13 @@
 body {
-    background-color: #0000;
+    background-color: black;
 }
 
 .container {
-    width: 600px;
+    width: 900px;
     background-color: #d3d3d3;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     margin: auto;
     padding: 40px;
     border-radius: 4px;
@@ -20,9 +20,14 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    row-gap: 20px;
+    row-gap: 10px;
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.calc h1 {
+    margin-top: -10px;
+    font-size: 40px;
 }
 
 .calc input {
@@ -32,6 +37,7 @@ body {
     font-size: 1.2rem;
     margin: 15px 70px;
     border-radius: 5px;
+    text-align: right;
 }
 
 .calc input[type=number]:focus {
@@ -43,6 +49,7 @@ body {
 .buttons {
     display: flex;
     column-gap: 5px;
+    margin-top: 5px;
 }
 
 .calc button {
@@ -59,4 +66,34 @@ body {
 .calc button:hover {
     background-color: #0069D9;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.historico {
+    width: 400px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.historico h1 {
+    align-self: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.last-operations {
+    text-align: right;
+}
+
+.last-operations p {
+    margin-top: -2px;
+    font-size: 15px;
+}
+
+.last-operations div {
+    font-size: 18px;
 }
